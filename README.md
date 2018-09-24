@@ -6,3 +6,7 @@ To launch an interactive session, click here: [![Binder](https://mybinder.org/ba
 Exercise outline:
 - Week 1, python-introduction
   - Read and run all of the items in python-introduction/python-tutorial.ipynb
+- Week 2, statistics and diffusion
+  - Fill in the missing pieces in statistics/statistics-week1.ipynb
+- Week 4, statistics and diffusion
+  - Fill in the missing pieces in rdf/Week4-RadialDistributionFunction.ipynb
