@@ -10,3 +10,5 @@ Exercise outline:
   - Fill in the missing pieces in statistics/statistics-week1.ipynb
 - Week 4, statistics and diffusion
   - Fill in the missing pieces in rdf/Week4-RadialDistributionFunction.ipynb
+- Week 7, introduction to molecular dynamics
+  - Fill in the missing pieces in md/introduction-to-molecular-dynamics.ipynb
