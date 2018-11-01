@@ -12,3 +12,5 @@ Exercise outline:
   - Fill in the missing pieces in rdf/Week4-RadialDistributionFunction.ipynb
 - Week 7, introduction to molecular dynamics
   - Fill in the missing pieces in md/introduction-to-molecular-dynamics.ipynb
+- Week 8, Lanvegin dynamics
+  - Follow the instructions to modify parameters and see the effect on resulting dynamics, in md/langevin-dynamics.ipynb
