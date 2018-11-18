@@ -14,3 +14,5 @@ Exercise outline:
   - Fill in the missing pieces in md/introduction-to-molecular-dynamics.ipynb
 - Week 8, Lanvegin dynamics
   - Follow the instructions to modify parameters and see the effect on resulting dynamics, in md/langevin-dynamics.ipynb
+- Week 12, Monte Carlo for the Ising Model
+  - Fill in the missing pieces in monte-carlo/monte-carlo-ising-model.ipynb
