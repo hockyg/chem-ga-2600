@@ -1,0 +1,16 @@
+pair_style      lj/cut/coul/long 10.0 8.0
+bond_style      harmonic
+angle_style     harmonic 
+
+#Masses
+mass 1 1.008000 # HT
+mass 2 15.999400 # OT
+
+pair_coeff      1    1 0.0460 0.4000 #HT-HT
+pair_coeff      1    2 0.0836 1.7753 #HT-OT
+pair_coeff      2    2 0.1521 3.1507 #OT-OT
+
+bond_coeff      1    450.0 0.9572 # HT-OT 
+
+angle_coeff     1    55.0  104.52 # HT-OT-HT
+

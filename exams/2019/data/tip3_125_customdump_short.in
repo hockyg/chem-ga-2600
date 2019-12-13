@@ -1,0 +1,46 @@
+# Waterbox
+echo both
+
+neighbor        2.5 bin
+neigh_modify    every 2 delay 0 check yes
+
+units           real
+atom_style      full
+
+read_data       tip3_125_opt.data 
+include         tip3_125.param 
+
+kspace_style    pppm 1.0e-6
+
+minimize        1.0e-4 1.0e-6 300 1000
+
+velocity        all create 310.0 12345 mom yes rot yes dist gaussian
+fix             mynpt all npt temp 310.0 310.0 400.0 iso 1.0 1.0 1000.0 #drag .01
+
+dump            d1 all dcd 10 tip3_125.eq.dcd 
+dump_modify     d1 unwrap yes
+
+timestep         0.5
+
+thermo           100
+
+run              10000
+#write_restart    tip3_125.eq.state 
+timestep 1.0
+run              5000
+
+unfix mynpt
+fix mynve all nve
+
+reset_timestep 0
+undump d1
+
+dump 1 all dcd 100 water_tip3_200ps_every200fs_unwrap_nve.dcd
+dump_modify 1 sort id unwrap yes
+
+dump 2 all custom 10 water_tip3_5ps_every20fs_nve.vel.lammpstrj id type vx vy vz
+dump_modify 2 sort id
+run		5000
+undump 2
+
+run		195000
