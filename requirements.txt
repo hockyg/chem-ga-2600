@@ -1,5 +1,5 @@
 numpy==1.17.4
 scipy==1.1.0
 matplotlib==2.2.2
-sklearn==0.19.1
 MDAnalysis==0.20.1
+sklearn
